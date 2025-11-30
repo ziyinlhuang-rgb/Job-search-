@@ -31,7 +31,5 @@ steps:
       pip install anthropic schedule
 
   - name: Run job search
-    env:
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     run: python job_search_agent.py once
 ```
